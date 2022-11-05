@@ -3,7 +3,7 @@
 The Budget app is a mobile application, where we manage our expenses.
 
 ## Video Presentation link
-[Video Link]()
+[Video Link]("https://lovely-syrniki-00c0ff.netlify.app")
 
 
 ## Live Link
