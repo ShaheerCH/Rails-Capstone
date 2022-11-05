@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/ShaheerCH/Rails-Capstone.git" }
 
 ruby '3.1.2'
 

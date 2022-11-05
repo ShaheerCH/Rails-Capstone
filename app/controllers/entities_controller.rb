@@ -29,7 +29,7 @@ class EntitiesController < ApplicationController
     if @entity.save
       @entity.groups.push(*Group.where(id: c_ids))
       redirect_to(
-        group_entities_path(params[:group_id]), notice: 'Transaction created successfully!'
+        group_entities_path(params[:group_id]), notice: 'Transaction Created'
       )
     else
       error_render(@entity.errors.objects.first.full_message)

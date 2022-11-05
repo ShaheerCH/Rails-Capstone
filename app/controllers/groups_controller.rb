@@ -17,7 +17,7 @@ class GroupsController < ApplicationController
   def create
     @group = Group.new(create_params)
     if @group.save
-      redirect_to(root_path, notice: 'Category created successfully')
+      redirect_to(root_path, notice: 'Category Created')
     else
       render(:new, status: :unprocessable_entity, alert: @group.errors.objects.first.full_message)
     end
