@@ -1,0 +1,21 @@
+<section>
+  <%= form_with(model: @entity, url: group_entities_path(group_id)) do |f| %>
+    <%= f.text_field(:name, placeholder: 'name', required: true, class:'field') %>
+
+    <%= f.number_field(:amount, placeholder: 'amount', required: true, class:'field') %>
+
+    <div>
+      <%= f.label('Select another category') %>
+      <%= f.collection_check_boxes(:group_ids, my_groups, :id, :name, class:'field') do |c| %>
+        <div>
+          <%= c.check_box %>
+          <%= c.label %>
+        </div>
+      <% end %>
+    </div>
+
+    <div>
+      <%= f.submit "Save", class:'new-ft-btn field' %>
+    </div>
+  <% end %>
+</section>

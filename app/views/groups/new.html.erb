@@ -1,0 +1,15 @@
+<section>
+  <%= form_with(model: @group) do |f| %>
+    <div>
+      <%= f.text_field(:name, placeholder: 'Name', required: true, class:'field') %>
+    </div>
+
+    <div>
+      <%= f.text_field(:icon, placeholder: 'Icon: money.png, food.png, car.png, health.jpg', required: true, class:'field') %>
+    </div>
+
+    <div>
+      <%= f.submit "Save", class: 'new-ft-btn field' %>
+    </div>
+  <% end %>
+</section>
