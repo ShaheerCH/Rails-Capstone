@@ -3,11 +3,11 @@
 The Budget app is a mobile application, where we manage our expenses.
 
 ## Video Presentation link
-[Video Link]("https://www.loom.com/share/e3a4c69ca89c47e78e767a7f1668b9b4")
+[Video Link](https://www.loom.com/share/e3a4c69ca89c47e78e767a7f1668b9b4)
 
 
 ## Live Link
-[Live Link]("https://budget-app-a.herokuapp.com/login")
+[Live Link](https://budget-app-a.herokuapp.com/login)
 
 ## Built With
 
