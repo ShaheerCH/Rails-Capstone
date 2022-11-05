@@ -1,0 +1,22 @@
+<section>
+  <% if @groups.empty? %>
+    <h3>Create your first Category</h3>
+  <% else %>
+    <ul class="flex-col" id="catego_list">
+      <% @groups.each do |g| %>
+        <li class="categ-item ft-item">
+            <%= image_tag(check_icon(g.icon)) %>
+          <div>
+            <%= link_to(g.name, group_entities_path(g)) %>
+            <div class="flex-between">
+            <span><%= created_by %></span>
+            <span><%= total_amount(g) %></span>
+          </div>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</section>
+
+<%= link_to('New Category', new_group_path, class: 'new-ft-btn') %>

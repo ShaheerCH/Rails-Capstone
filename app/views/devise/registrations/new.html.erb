@@ -1,0 +1,15 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  
+    <%= f.text_field :name, autofocus: true, autocomplete: "Name", placeholder: "Full name", class:'field' %>
+
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class:'field' %>
+
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password", class:'field' %>
+
+  <div class="actions">
+    <%= f.submit "Sign up", class:'new-ft-btn field sign' %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

@@ -1,0 +1,11 @@
+<nav class='nav'>
+<h2 class='back'><strong><%= link_to '<', root_path %></strong><h2>
+
+<% if current_page?(:controller => 'devise/sessions', :action => 'new') %>
+  <div class='reg'><%= @title || "LOGIN" %></div>
+<% else %>
+ <div class='reg'> <%= @title || "REGISTER" %> </div>
+<% end %>
+
+<h4 class='s-out'><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></h4>
+</nav>
